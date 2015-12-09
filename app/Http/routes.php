@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('amministratori','AmministratoriController');
+
+Route::resource('utenti','UtentiController');
+
+Route::resource('aziende','AziendeController');
+
+Route::resource('problemi','ProblemiController');
