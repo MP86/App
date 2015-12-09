@@ -24,8 +24,31 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        //
+       // $router->model('amministratori', \App\Amministratore::class);                         /* versione semplice */
+	   
+	   
+	   
+    	
+    	$router->bind('amministratori', function($id) {                             /*versione con opzioni specifiche*/
+    		return \App\Amministratore::where('id', $id)->FirstOrFail();
+    		 
+    	});
+		
+		$router->bind('utenti', function($id) {                             /*versione con opzioni specifiche*/
+    		return \App\Utente::where('id', $id)->FirstOrFail();
+    		 
+    	});
 
+    	$router->bind('aziende', function($id) {                             /*versione con opzioni specifiche*/
+    		return \App\Azienda::where('id', $id)->FirstOrFail();
+    		 
+    	});
+		
+    	$router->bind('problemi', function($id) {                             /*versione con opzioni specifiche*/
+    		return \App\Problema::where('id', $id)->FirstOrFail();
+    		 
+    	});
+		
         parent::boot($router);
     }
 
