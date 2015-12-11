@@ -22,3 +22,5 @@ Route::resource('utenti','UtentiController');
 Route::resource('aziende','AziendeController');
 
 Route::resource('problemi','ProblemiController');
+
+Route::resource('preventivi','PreventiviController');

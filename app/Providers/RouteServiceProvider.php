@@ -49,6 +49,11 @@ class RouteServiceProvider extends ServiceProvider
     		 
     	});
 		
+    	$router->bind('preventivi', function($id) {                             /*versione con opzioni specifiche*/
+    		return \App\Preventivo::where('id', $id)->FirstOrFail();
+    		 
+    	});
+		
         parent::boot($router);
     }
 

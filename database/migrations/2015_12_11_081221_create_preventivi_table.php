@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProblemiTable extends Migration
+class CreatePreventiviTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,13 @@ class CreateProblemiTable extends Migration
      */
     public function up()
     {
-        Schema::create('problemi', function (Blueprint $table) {
+        Schema::create('preventivi', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('Nome prolema');
-            $table->string('Tipo di problema');
-            $table->text('Descrizione problema');
-            $table->string('Dove');
-            $table->rememberToken();
+            $table->binary('data');
+            $table->string('azienda');
+            $table->string('cliente');
+            $table->text('descrizione');
+            $table->decimal('prezzo', 6, 2);
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateProblemiTable extends Migration
      */
     public function down()
     {
-        Schema::drop('problemi');
+        Schema::drop('preventivi');
     }
 }
