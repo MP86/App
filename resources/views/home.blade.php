@@ -11,7 +11,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../">  <!--  icona nel titol -->
+    <link rel="icon" href="icona.png">  <!--  icona nel titol -->
     
     <title>Trova professionisti</title>
 
@@ -55,8 +55,8 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Registrazione</a></li>
+                <li><a href="#contact">Contatti</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -86,20 +86,23 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="jpg/1.jpg" alt="First slide">
+          <img class="first-slide" src="jpg/elettricista.jpg" alt="donna-elettricista">
           <div class="container">
             <div class="carousel-caption">
               <h1>Example headline.</h1>
               <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">idraulico</a></p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="first-slide" src="jpg/2.jpg" alt="Second slide">
+          <img class="first-slide" src="jpg/fabbro.jpg" alt="donna-fabbro">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -109,7 +112,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="jpg/3.jpg" alt="Third slide">
+          <img class="second-slide" src="jpg/falegname.jpg" alt="donna-falegname">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
@@ -119,7 +122,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="jpg/4.jpg" alt="Second slide">
+          <img class="second-slide" src="jpg/idraulico.jpg" alt="donna-idraulico">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -129,7 +132,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="jpg/5.jpg" alt="Third slide">
+          <img class="third-slide" src="jpg/imbianchino.jpg" alt="donna-imbianchino">
           <div class="container">
             <div class="carousel-caption">
               <h1>One more for good measure.</h1>
@@ -139,7 +142,7 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="jpg/6.jpg" alt="donna-falegname">
+          <img class="third-slide" src="jpg/muratore.jpg" alt="donna-muratore">
           <div class="container">
             <div class="carousel-caption">
               <h1>Another example headline.</h1>
@@ -169,18 +172,18 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+        <div class="col-lg-6">
+          <img class="img-circle" src="jpg/utente.jpg" alt="utente" width="140" height="140">
+          <h2>Utente</h2>
+          <p>Registrandoti puoi inserire il tuo problema in modo da poter essere elaborato un preventivo per risolverlo.</p>
+          <p><a class="btn btn-default" href="#" role="button">Registrati &raquo;</a></p>
+        </div><!-- /.col-lg-6 -->
+        <div class="col-lg-6">
+          <img class="img-circle" src="jpg/azienda.jpg" alt="azienda" width="140" height="140">
+          <h2>Azienda</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+          <p><a class="btn btn-default" href="#" role="button">Registrati &raquo;</a></p>
+        </div><!-- /.col-lg-6 -->
       </div><!-- /.row -->
 
 
