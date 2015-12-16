@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('utente', function () {
+    return view('utente');
+});
+
 Route::resource('amministratori','AmministratoriController');
 
 Route::resource('utenti','UtentiController');
