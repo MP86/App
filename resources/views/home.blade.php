@@ -29,7 +29,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="css/carousel1.css" rel="stylesheet">
+    <link href="css/miocss.css" rel="stylesheet">
   </head>
   
 <!-- NAVBAR
@@ -51,9 +51,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#registrazione">Registrazione</a></li>
-                <li><a href="#">Contatti</a></li>
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/registrazione">Registrazione</a></li>
+                <li><a href="/contatti">Contatti</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -77,7 +77,7 @@
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">  <!-- immagini 1663x500 -->
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -181,16 +181,17 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6" id="reg1">
           <img class="img-circle" src="jpg/utente.jpg" alt="utente" width="140" height="140">
           <h2>Utente</h2>
           <p>Registrandoti puoi inserire il tuo problema in modo da poter essere elaborato un preventivo per risolverlo.</p>
           <p><a class="btn btn-default" href="#" role="button">Registrati &raquo;</a></p>
         </div><!-- /.col-lg-6 -->
-        <div class="col-lg-6">
+        
+        <div class="col-lg-6" id="reg2">
           <img class="img-circle" src="jpg/azienda.jpg" alt="azienda" width="140" height="140">
           <h2>Azienda</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p>Qui le aziende registrandosi possono visualizzare le richieste degli utenti e eventualmente venir prese in considerazione più velocemente per i preventivi.</p>
           <p><a class="btn btn-default" href="#" role="button">Registrati &raquo;</a></p>
         </div><!-- /.col-lg-6 -->
       </div><!-- /.row -->
@@ -202,37 +203,39 @@
 
 		<h1>Le migliori aziende:</h1>
 		
-      <div class="row featurette">
+		<br>
+		
+      <div class="row featurette"  id="info1">
         <div class="col-md-7">
-          <h2 class="featurette-heading">La miglior impresa di<span class="text-muted">muratori</span></h2>
-          <p class="lead">Questa azienda è stata la meglio valutata da voi.</p>
+          <h2 class="featurette-heading">La miglior impresa di <span class="text-muted">muratori.</span></h2>
+          <p class="lead"><i>Questa azienda è stata la meglio valutata da voi.</i></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="jpg/fs.jpg" alt="ferrovie dello stato">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="info2">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">La piu scelta per <span class="text-muted">imbiancare</span></h2>
-          <p class="lead">Miglior qualità/prezzo.</p>
+          <h2 class="featurette-heading">La piu scelta per <span class="text-muted">imbiancare.</span></h2>
+          <p class="lead"><i>Miglior qualità/prezzo.</i></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="jpg/ef.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div class="row featurette" id="info3">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Il migliore<span class="text-muted">io</span></h2>
-          <p class="lead">Secondo chi mi paga di più.</p>
+          <h2 class="featurette-heading">Il migliore <span class="text-muted">io.</span></h2>
+          <p class="lead"><i>Secondo chi mi paga di più.</i></p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="jpg/io.jpg" alt="mia foto">
         </div>
       </div>
 

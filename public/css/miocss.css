@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+
+#reg1 {
+	background-color:#98FB98;
+}
+
+#reg2 {
+	background-color:#FFD700;
+}
+
+#info1 {
+	background-color:#7D9EC0;
+}
+#info2 {
+	background-color:#7171C6;
+}
+#info3 {
+	background-color:#388E8E;
+}
+#info1 span {
+	color:#282828;
+	text-decoration: underline;
+}
+#info2 span {
+	color:#282828;
+	text-decoration: underline;
+}
+#info3 span {
+	color:#282828;
+	text-decoration: underline;
+}

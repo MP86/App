@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('utente', function () {
-    return view('utente');
+Route::get('contatti', function () {
+    return view('contatti');
 });
 
 Route::resource('amministratori','AmministratoriController');
