@@ -19,6 +19,7 @@ class CreateProblemiTable extends Migration
             $table->string('Tipo di problema');
             $table->text('Descrizione problema');
             $table->string('Dove');
+            $table->integer('CAP');
             $table->rememberToken();
             $table->timestamps();
         });
