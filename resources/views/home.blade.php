@@ -87,14 +87,15 @@
         <li data-target="#myCarousel" data-slide-to="4"></li>
         <li data-target="#myCarousel" data-slide-to="5"></li>
         <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img class="first-slide" src="jpg/elettricista.jpg" alt="donna-elettricista">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Se ti serve</h1>
-              <p><!-- <code>file://</code> --> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <h1>Cerchi un</h1>
+              <p><!-- <code>file://</code> --></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Elettricista</a></p>
             </div>
           </div>
@@ -103,8 +104,8 @@
           <img class="first-slide" src="jpg/fabbro.jpg" alt="donna-fabbro">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1></h1>
+              <p></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Fabbro</a></p>
             </div>
           </div>
@@ -113,8 +114,8 @@
           <img class="second-slide" src="jpg/falegname.jpg" alt="donna-falegname">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1></h1>
+              <p></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Falegname</a></p>
             </div>
           </div>
@@ -123,8 +124,8 @@
           <img class="second-slide" src="jpg/idraulico.jpg" alt="donna-idraulico">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1></h1>
+              <p></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Idraulico</a></p>
             </div>
           </div>
@@ -133,9 +134,9 @@
           <img class="third-slide" src="jpg/imbianchino.jpg" alt="donna-imbianchino">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+              <h1></h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Imbianchino</a></p>
             </div>
           </div>
         </div>
@@ -143,9 +144,19 @@
           <img class="third-slide" src="jpg/muratore.jpg" alt="donna-muratore">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1></h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Muratore</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="jpg/scelta.jpg" alt="noi gruppo di persone">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>o in ogni caso non sai quale</h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">scegliere?!?</a></p>
             </div>
           </div>
         </div>
@@ -153,9 +164,9 @@
           <img class="third-slide" src="jpg/noi.jpg" alt="noi gruppo di persone">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+              <h1>Allora</h1>
+              <p>fatti aiutare da</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Noi</a></p>
             </div>
           </div>
         </div>
