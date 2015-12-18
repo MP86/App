@@ -52,21 +52,9 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="/registrazione">Registrazione</a></li>
+                <li><a href="#registrazione">Registrazione</a></li>
                 <li><a href="/contatti">Contatti</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
+                
             </div>
           </div>
         </nav>
@@ -88,6 +76,7 @@
         <li data-target="#myCarousel" data-slide-to="5"></li>
         <li data-target="#myCarousel" data-slide-to="6"></li>
         <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -151,10 +140,10 @@
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="jpg/scelta.jpg" alt="noi gruppo di persone">
+          <img class="third-slide" src="jpg/scelta.jpg" alt="prendere una scelta">
           <div class="container">
             <div class="carousel-caption">
-              <h1>o in ogni caso non sai quale</h1>
+              <h1>o non sai quale</h1>
               <p></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">scegliere?!?</a></p>
             </div>
@@ -164,9 +153,19 @@
           <img class="third-slide" src="jpg/noi.jpg" alt="noi gruppo di persone">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Allora</h1>
-              <p>fatti aiutare da</p>
+              <h1>Allora fatti aiutare da</h1>
+              <p></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Noi</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="jpg/preventivi.jpg" alt="preventivi">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>iscriviti!!!</h1>
+              <p>così creerai la tua pagina personale nella quale potrai effettuare le richieste per poi ottenere i</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Preventivi</a></p>
             </div>
           </div>
         </div>
