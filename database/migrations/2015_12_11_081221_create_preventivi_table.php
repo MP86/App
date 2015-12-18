@@ -15,10 +15,11 @@ class CreatePreventiviTable extends Migration
         Schema::create('preventivi', function (Blueprint $table) {
             $table->increments('id');
             $table->binary('data');
-            $table->string('azienda');
-            $table->string('cliente');
+            $table->string('id azienda');
+            $table->string('id problema');
             $table->text('descrizione');
             $table->decimal('prezzo', 6, 2);
+            $table->rememberToken();
             $table->timestamps();
         });
     }
