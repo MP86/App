@@ -4,7 +4,31 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Utente extends Model
-{
-    //
+class Utente extends Model                                                       
+{	
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    protected $table = 'utenti';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = ['nickname', 'email', 'ruolo'];
+
+    /**
+     * The attributes excluded from the model's JSON form.
+     *
+     * @var array
+     */
+    protected $hidden = ['remember_token'];
+    
+    public function problemi()
+    {
+    	return $this->hasMany('App\Problema');
+    }
 }

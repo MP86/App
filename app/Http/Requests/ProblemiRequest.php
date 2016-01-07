@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use App\Http\Requests\Request;
 
-class PreventiviRequest extends Request
+class ProblemiRequest extends Request
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,10 +24,12 @@ class PreventiviRequest extends Request
     public function rules()
     {
         return [
-        		'data_scadenza' => ['required', 'max:255'],
-        		'pdf' => ['required', 'mimes:pdf'],
-        		'descrizione' => ['required', 'max:255'],
-        		'prezzo' => ['required', 'numeric', 'max:10'],
+        		'nome' => ['required', 'max:255'],
+        		'foto' => ['required', 'mimes:jpeg,bmp,png,jpg'],
+        		'tipo' => ['required', 'max:255'],
+        		'descrizione' => ['required'],
+        		'indirizzo' => ['required', 'max:255'],
+        		'CAP' => ['required', 'numeric'],
         ];
     }
 }

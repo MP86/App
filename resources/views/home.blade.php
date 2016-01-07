@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="icona.png">  <!--  icona nel titol -->
+    <link rel="icon" href="icona.png">  <!--  icona nel titolo -->
     
     <title>Trova professionisti</title>
 
@@ -16,11 +16,11 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -29,6 +29,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
+    
     <link href="css/miocss.css" rel="stylesheet">
   </head>
   
@@ -52,9 +53,11 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
+                <li><a href="#"></a></li>
                 <li><a href="#registrazione">Registrazione</a></li>
+                <li><a href="#"></a></li>
                 <li><a href="/contatti">Contatti</a></li>
-                
+              </ul>
             </div>
           </div>
         </nav>
@@ -77,6 +80,7 @@
         <li data-target="#myCarousel" data-slide-to="6"></li>
         <li data-target="#myCarousel" data-slide-to="7"></li>
         <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -140,6 +144,16 @@
           </div>
         </div>
         <div class="item">
+          <img class="third-slide" src="jpg/gruppo-operai.jpg" alt="gruppo di operai">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1></h1>
+              <p></p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">o anche tutti!</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
           <img class="third-slide" src="jpg/scelta.jpg" alt="prendere una scelta">
           <div class="container">
             <div class="carousel-caption">
@@ -195,14 +209,14 @@
           <img class="img-circle" src="jpg/utente.jpg" alt="utente" width="140" height="140">
           <h2>Utente</h2>
           <p>Registrandoti puoi inserire il tuo problema in modo da poter essere elaborato un preventivo per risolverlo.</p>
-          <p><a class="btn btn-default" href="#" role="button">Registrati &raquo;</a></p>
+          <p><a class="btn btn-default" href="/utenti/create" role="button">Registrati &raquo;</a></p>
         </div><!-- /.col-lg-6 -->
         
         <div class="col-lg-6" id="reg2">
           <img class="img-circle" src="jpg/azienda.jpg" alt="azienda" width="140" height="140">
           <h2>Azienda</h2>
           <p>Qui le aziende registrandosi possono visualizzare le richieste degli utenti e eventualmente venir prese in considerazione più velocemente per i preventivi.</p>
-          <p><a class="btn btn-default" href="#" role="button">Registrati &raquo;</a></p>
+          <p><a class="btn btn-default" href="/aziende/create" role="button">Registrati &raquo;</a></p>
         </div><!-- /.col-lg-6 -->
       </div><!-- /.row -->
 
@@ -258,7 +272,7 @@
       <footer>
         <p class="pull-right"><a href="#registrazione"><button type="button" class="btn btn-info">Torna sù <img alt="Freccia sù" src="jpg/sù.png"></button></a></p>
         <img alt="Marchio reggistrato" src="jpg/MP.png">
-        <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->

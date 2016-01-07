@@ -11,13 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/','HomeController@home');
 
-Route::get('contatti', function () {
-    return view('contatti');
-});
+Route::get('contatti','HomeController@contatti');
+
+Route::resource('login','LoginController');
 
 Route::resource('amministratori','AmministratoriController');
 

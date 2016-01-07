@@ -4,19 +4,39 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ProblemiRequest;
+use App\Problema;
+use Illuminate\Http\JsonResponse;
 
 class ProblemiController extends Controller
-{
+{	
+	public function __construct() {
+		//$this->middleware('auth', ['only' => 'index']);
+	}
+	
+	public function utente()
+	{
+		return view('problemi.utente');
+	}
+	
+	public function azienda()
+	{
+		return view('problemi.azienda');
+	}
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+	
+    public function index(Request $request)
     {
-        //
+    	$problemi = Problema::latest()->get();
+    	if ($request->ajax() || $request->wantsJson()) {
+    		return new JsonResponse($problemi);
+    	}
+    	return view('problemi.index', compact('problemi'));
     }
 
     /**
@@ -26,7 +46,7 @@ class ProblemiController extends Controller
      */
     public function create()
     {
-        //
+    	return view('problemi.create');
     }
 
     /**
@@ -35,9 +55,18 @@ class ProblemiController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProblemiRequest $request)
     {
-        //
+    	//$problema = Problema::create($request->all()); // farebbe prendere tutti i dati delle request
+    	$dati = $request->all();
+    	//$dati["ruolo"] = "azienda";
+    	 
+    	if ($request->ajax() || $request->wantsJson()) {
+    		return new JsonResponse($problema);
+    	}
+    	flash()->success('salvato con successo!');
+    	 
+    	return redirect('problemi.utente');
     }
 
     /**
@@ -46,9 +75,19 @@ class ProblemiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Problema $problema)
     {
-        //
+    	return view('problemi.show', compact('problema'));
+    }
+    
+    public function utenteshow(Preventivo $preventivo)
+    {
+    	return view('problemi.azienda');
+    }
+    
+    public function aziendashow(Preventivo $preventivo)
+    {
+    	return view('problemi.azienda');
     }
 
     /**
@@ -57,9 +96,9 @@ class ProblemiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Problema $problema)
     {
-        //
+    	return view('problemi.edit', compact('problema'));
     }
 
     /**
@@ -69,9 +108,17 @@ class ProblemiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ProblemiRequest $request, Problema $problema)
     {
-        //
+    	$problema->update($request->all());
+    	
+    	if ($request->ajax() || $request->wantsJson()) {
+    		return new JsonResponse($problema);
+    	}
+    	
+    	flash()->success('aggiornato con successo!');
+    	
+    	return redirect('problemi.utente');
     }
 
     /**
@@ -80,8 +127,12 @@ class ProblemiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, Problema $problema)
     {
-        //
+    	$problema->delete();
+    	if ($request->ajax() || $request->wantsJson()) {
+    		return new JsonResponse($problema);
+    	}
+    	return redirect('problemi.utente');
     }
 }

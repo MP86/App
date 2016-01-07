@@ -4,20 +4,31 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Utente;
+use App\Http\Requests\UtentiRequest;
+use Illuminate\Http\JsonResponse;
 
 class UtentiController extends Controller
-{
+{	
+	public function __construct() {
+		//$this->middleware('auth', ['only' => 'index']);
+	}
+	
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-    }
+	
+	public function index(Request $request)
+	{
+		$utenti = Utente::latest()->get();
+		if ($request->ajax() || $request->wantsJson()) {
+			return new JsonResponse($utenti);
+		}
+		return view('utenti.index', compact('utenti'));
+	}
 
     /**
      * Show the form for creating a new resource.
@@ -26,7 +37,7 @@ class UtentiController extends Controller
      */
     public function create()
     {
-        //
+        return view('utenti.create');
     }
 
     /**
@@ -35,9 +46,20 @@ class UtentiController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UtentiRequest $request)
     {
-        //
+        $dati = $request->all();
+        $dati["ruolo"] = "utente"; //per inserire il ruolo controllare...
+        
+        $utente = Utente::create($dati);
+        
+        if ($request->ajax() || $request->wantsJson()) {
+            return new JsonResponse($utente);
+        }
+        
+        flash()->success('salvato con successo!');
+        
+        return redirect('problemi.utente');
     }
 
     /**
@@ -46,9 +68,9 @@ class UtentiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Utente $utente)
     {
-        //
+    	return view('utenti.show', compact('utente'));
     }
 
     /**
@@ -57,9 +79,9 @@ class UtentiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Utente $utente)
     {
-        //
+    	return view('utente.edit', compact('utente'));
     }
 
     /**
@@ -69,9 +91,17 @@ class UtentiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UtentiRequest $request, Utente $utente) //utente o utenti request
     {
-        //
+    	$utente->update($request->all());
+    	 
+    	if ($request->ajax() || $request->wantsJson()) {
+    		return new JsonResponse($utente);
+    	}
+    	 
+    	flash()->success('aggiornato con successo!');
+    	 
+    	return redirect('problemi.utente');
     }
 
     /**
@@ -80,8 +110,12 @@ class UtentiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request, Utente $utente)
     {
-        //
+    	$utente->delete();
+    	if ($request->ajax() || $request->wantsJson()) {
+    		return new JsonResponse($utente);
+    	}
+    	return redirect('utenti.create');
     }
 }

@@ -8,7 +8,7 @@ Lista partecipanti
 <h1>Partecipants</h1>
 @if (count($partecipants))
 <ul>
-	@foreach ($preventivi as $preventivo)
+	@foreach ($partecipants as $partecipant)
 		<div>
 			<h2><a href="{{action('PartecipantsController@show', [$partecipant->id])}}">
 					<ul>

@@ -14,14 +14,15 @@ class CreateProblemiTable extends Migration
     {
         Schema::create('problemi', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('id utente');
-            $table->string('Nome prolema');
-            $table->string('Tipo di problema');
-            $table->text('Descrizione problema');
-            $table->string('Dove');
+            $table->unsignedInteger('utente_id');
+            $table->string('nome');
+            $table->string('foto');
+            $table->string('tipo');
+            $table->text('descrizione');
+            $table->string('indirizzo');
             $table->integer('CAP');
-            $table->rememberToken();
             $table->timestamps();
+            $table->foreign('utente_id')->references('id')->on('utenti');
         });
     }
 

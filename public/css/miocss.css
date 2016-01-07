@@ -1,22 +1,51 @@
 @CHARSET "ISO-8859-1";
 
+body {
+	background-image: linear-gradient(to top right, #FFFFFF 0%, #DF15AA 50%, #AACFEF 100%);
+	/* IE10 */
+	background-image: -ms-linear-gradient(top right, #FFFFFF 0%, #AACFEF 100%);
+ 
+	/* Mozilla Firefox */
+	background-image: -moz-linear-gradient(top right, #FFFFFF 0%, #AACFEF 100%);
+ 
+	/* Opera */
+	background-image: -o-linear-gradient(top right, #FFFFFF 0%, #AACFEF 100%);
+ 
+	/* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #AACFEF));
+ 
+	/* Webkit (Chrome 11+) */
+	background-image: -webkit-linear-gradient(top right, #FFFFFF 0%, #AACFEF 100%);
+ 
+	/* Regola standard */
+	background-image: linear-gradient(to top right, #FFFFFF 0%, #AACFEF 100%);
+}
+
+
 #reg1 {
+	border-radius: 90px 90px 30px 30px;
 	background-color:#98FB98;
 }
 
 #reg2 {
+	border-radius: 90px 90px 30px 30px;
 	background-color:#FFD700;
 }
 
 #info1 {
+	border-radius: 10px 10px 10px 10px;
 	background-color:#7D9EC0;
 }
 #info2 {
+	border-radius: 10px 10px 10px 10px;
 	background-color:#7171C6;
 }
 #info3 {
+	border-radius: 10px 10px 10px 10px;
 	background-color:#388E8E;
 }
+
+
 #info1 span {
 	color:#282828;
 	text-decoration: underline;
