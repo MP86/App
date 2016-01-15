@@ -15,14 +15,40 @@ Route::get('/','HomeController@home');
 
 Route::get('contatti','HomeController@contatti');
 
-Route::resource('login','LoginController');
+Route::resource('registrazione', 'RegController');
 
-Route::resource('amministratori','AmministratoriController');
+Route::resource('users', 'UsersController');
 
-Route::resource('utenti','UtentiController');
+// Authentication routes...
+Route::get('auth/login', 'Auth\AuthController@getLogin');
+Route::post('auth/login', 'Auth\AuthController@postLogin');
+Route::get('auth/logout', 'Auth\AuthController@getLogout');
 
-Route::resource('aziende','AziendeController');
+// Registration routes...
+Route::get('auth/register', 'Auth\AuthController@getRegister');
+Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-Route::resource('problemi','ProblemiController');
+// Password reset link request routes...
+Route::get('password/email', 'Auth\PasswordController@getEmail');
+Route::post('password/email', 'Auth\PasswordController@postEmail');
 
-Route::resource('preventivi','PreventiviController');
+// Password reset routes...
+Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
+Route::post('password/reset', 'Auth\PasswordController@postReset');
+
+Route::resource('problems', 'ProblemsController');
+
+/*
+ |--------------------------------------------------------------------------
+ | Application Routes
+ |--------------------------------------------------------------------------
+ |
+ | This route group applies the "web" middleware group to every route
+ | it contains. The "web" middleware group is defined in your HTTP
+ | kernel and includes session state, CSRF protection, and more.
+ |
+ */
+
+Route::group(['middleware' => ['web']], function () {
+	//
+});

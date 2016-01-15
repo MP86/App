@@ -7,6 +7,7 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use App\Company;
 
 class AuthController extends Controller
 {
@@ -54,12 +55,27 @@ class AuthController extends Controller
      * @param  array  $data
      * @return User
      */
-    protected function create(array $data)
+    protected function usercreate(array $data)
     {
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+        	'ruolo' => $data['ruolo'],
+        	'phone' => $data['phone'],
         ]);
     }
+    
+
+    protected function companycreate(array $data)
+    {
+    	return Company::create([
+    			'name' => $data['name'],
+    			'email' => $data['email'],
+    			'password' => bcrypt($data['password']),
+    			'ruolo' => $data['ruolo'],
+    			'phone' => $data['phone'],
+    	]);
+    }
+
 }
