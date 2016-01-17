@@ -23,7 +23,7 @@ Home
               <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="#"></a></li>
-                <li><a href="#registrazione">Registrazione</a></li>
+                <li><a href="/auth/register">Registrazione</a></li>
                 <li><a href="#"></a></li>
                 <li><a href="/contatti">Contatti</a></li>
               </ul>
@@ -57,7 +57,7 @@ Home
             <div class="carousel-caption">
               <h1>Cerchi un</h1>
               <p><!-- <code>file://</code> --></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Elettricista</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">Elettricista</a></p>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ Home
             <div class="carousel-caption">
               <h1></h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Fabbro</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">Fabbro</a></p>
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@ Home
             <div class="carousel-caption">
               <h1></h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Falegname</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">Falegname</a></p>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ Home
             <div class="carousel-caption">
               <h1></h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Idraulico</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">Idraulico</a></p>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ Home
             <div class="carousel-caption">
               <h1></h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Imbianchino</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">Imbianchino</a></p>
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ Home
             <div class="carousel-caption">
               <h1></h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Muratore</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">Muratore</a></p>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ Home
             <div class="carousel-caption">
               <h1></h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">o anche tutti!</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">o anche tutti!</a></p>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ Home
             <div class="carousel-caption">
               <h1>o non sai quale</h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">scegliere?!?</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">scegliere?!?</a></p>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@ Home
             <div class="carousel-caption">
               <h1>Allora fatti aiutare da</h1>
               <p></p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Noi</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">Noi</a></p>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ Home
             <div class="carousel-caption">
               <h1>iscriviti!!!</h1>
               <p>così creerai la tua pagina personale nella quale potrai effettuare le richieste per poi ottenere i</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Preventivi</a></p>
+              <p><a class="btn btn-lg btn-primary" href="/auth/register" role="button">Preventivi</a></p>
             </div>
           </div>
         </div>
@@ -173,16 +173,16 @@ Home
           <img class="img-circle" src="../img/home/utente.jpg" alt="utente" width="140" height="140">
           <h2>Utente</h2>
           <p>Registrandoti puoi inserire il tuo problema in modo da poter essere elaborato un preventivo per risolverlo.</p>
-          <p><a class="btn btn-default" href="/utenti/create" role="button">Registrati &raquo;</a></p>
-          <p><a class="btn btn-primary" href="/utente@login" role="button">Login</a></p>
+          <p><a class="btn btn-default" href="/auth/register" role="button">Registrati &raquo;</a></p>
+          <p><a class="btn btn-primary" href="/auth/login" role="button">Login</a></p>
         </div><!-- /.col-lg-6 -->
         
         <div class="col-lg-6" id="reg2">
           <img class="img-circle" src="../img/home/azienda.jpg" alt="azienda" width="140" height="140">
           <h2>Azienda</h2>
           <p>Qui le aziende registrandosi possono visualizzare le richieste degli utenti e eventualmente venir prese in considerazione più velocemente per i preventivi.</p>
-          <p><a class="btn btn-default" href="/aziende/create" role="button">Registrati &raquo;</a></p>
-          <p><a class="btn btn-primary" href="/azienda@login" role="button">Login</a></p>
+          <p><a class="btn btn-default" href="/auth/register" role="button">Registrati &raquo;</a></p>
+          <p><a class="btn btn-primary" href="/auth/login" role="button">Login</a></p>
         </div><!-- /.col-lg-6 -->
       </div><!-- /.row -->
       

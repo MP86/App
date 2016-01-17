@@ -1,5 +1,5 @@
 <?php
-/*
+
 return [
 
     /*
@@ -14,7 +14,7 @@ return [
     | Supported: "database", "eloquent"
     |
     */
-/*
+
     'driver' => 'eloquent',
 
     /*
@@ -27,7 +27,7 @@ return [
     | is often just the "User" model but you may use whatever you like.
     |
     */
-/*
+
     'model' => App\User::class,
 
     /*
@@ -40,7 +40,7 @@ return [
     | default value but you may easily change it to any table you like.
     |
     */
-/*
+
     'table' => 'users',
 
     /*
@@ -57,7 +57,7 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
     */
-/*
+
     'password' => [
         'email'  => 'emails.password',
         'table'  => 'password_resets',
@@ -65,17 +65,18 @@ return [
     ],
 
 ];
-*/
 
+/*
 'multi' => [
-    'user' => [
+    'users' => [
         'driver' => 'eloquent',
         'model'  => App\User::class,
         'table'  => 'users'
     ],
-    'admin' => [
+    'admins' => [
         'driver' => 'eloquent',
         'model'  => App\Admin::class,
         'table'  => 'admins'
     ],
  ];
+*/
