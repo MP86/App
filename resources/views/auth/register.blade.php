@@ -13,7 +13,7 @@ Registrazione
 				<div class="panel-body">
 					@if (count($errors) > 0)
 						<div class="alert alert-danger">
-							<strong>Whoops!</strong> Ci sono stati alcuni problemi con i vostri dati.<br /><br />
+							<strong>Whoops!</strong> Ci sono stati problemi con i dati inseriti.<br /><br />
 							<ul>
 								@foreach ($errors->all() as $error)
 									<li>{{ $error }}</li>
@@ -72,11 +72,6 @@ Registrazione
 							
 								<button type="submit" class="btn btn-info" name="ruolo" value="company">
 									Registra Azienda
-								</button>
-								
-								<button type="submit" class="btn btn-default" href="/auth/login">
-									Se sei gia registrato...
-									Fai login
 								</button>
 						
 							</div>

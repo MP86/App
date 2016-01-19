@@ -46,7 +46,7 @@ Contatti
           <h2>Utente</h2>
           <p>Registrandoti puoi inserire il tuo problema in modo da poter essere elaborato un preventivo per risolverlo.</p>
           <p><a class="btn btn-default" href="/registrazione" role="button">Registrati &raquo;</a></p>
-          <p><a class="btn btn-primary" href="/utente@login" role="button">Login</a></p>
+          <p><a class="btn btn-primary" href="/auth/login" role="button">Login</a></p>
         </div><!-- /.col-lg-6 -->
         
         <div class="col-lg-6" id="reg2">
@@ -54,7 +54,7 @@ Contatti
           <h2>Azienda</h2>
           <p>Qui le aziende registrandosi possono visualizzare le richieste degli utenti e eventualmente venir prese in considerazione più velocemente per i preventivi.</p>
           <p><a class="btn btn-default" href="/registrazione" role="button">Registrati &raquo;</a></p>
-          <p><a class="btn btn-primary" href="/azienda@login" role="button">Login</a></p>
+          <p><a class="btn btn-primary" href="/auth/login" role="button">Login</a></p>
         </div><!-- /.col-lg-6 -->
       </div><!-- /.row -->
       
